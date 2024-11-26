@@ -5,40 +5,298 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML + CSS</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-     
-
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-
     <!-- Container for navbar and header -->
-
+    <div class="container p-4">
       <!-- Navigation Bar -->
-      
-      <!-- Burger Menu that targets the navigation with the id sitMenu -->  
-
+      <nav class="navbar navbar-expand-lg navbar-dark fw-lighter">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="img/logo.png"
+              class="img-fluid"
+              alt="airstream perfomance apparel logo"
+            />
+          </a>
+          <!-- Burger Menu that targets the navigation with the id sitMenu -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-end pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign-in/Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <!-- Header -->
-      
+      <header
+        class="homebanner rounded-4 text-center mt-4 pb-2 d-flex flex-column align-items-center justify-content-center"
+      >
+        <h1 class="display-1 text-white fw-lighter shadow-effects">
+          Sole Runner
+        </h1>
+        <h4 class="display-6 text-white fw-light shadow-effects">
+          Autumn Gear
+        </h4>
+        <a class="btn btn-success btn-success-shadow text-white" href="#"
+          >ENTER</a
+        >
+      </header>
+    </div>
     <!-- End for Container navbar and header -->
 
     <!-- Newsletter -->
+    <div class="container text-white p-4">
+      <div class="d-flex flex-column">
+        <div class="col-8 mx-auto">
+          <p class="text-center fs-3 fw-lighter mb-2">
+            Subscribe for our newsletter
+          </p>
 
+          <!-- Form to submit newsletter -->
+          <form action="">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Please enter your email"
+                aria-label="User email"
+                aria-describedby="submit button for email for newsletter"
+              />
+              <button
+                class="btn btn-success"
+                type="submit"
+                id="btn-submit-newsletter"
+              >
+                <!-- icon for submit button -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="white"
+                    d="M16.1 260.2c-22.6 12.9-20.5 47.3 3.6 57.3L160 376l0 103.3c0 18.1 14.6 32.7 32.7 32.7c9.7 0 18.9-4.3 25.1-11.8l62-74.3 123.9 51.6c18.9 7.9 40.8-4.5 43.9-24.7l64-416c1.9-12.1-3.4-24.3-13.5-31.2s-23.3-7.5-34-1.4l-448 256zm52.1 25.5L409.7 90.6 190.1 336l1.2 1L68.2 285.7zM403.3 425.4L236.7 355.9 450.8 116.6 403.3 425.4z"
+                  />
+                </svg>
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <!-- Cards container -->
-    
-    
+    <div class="container p-4">
+      <!-- cards -->
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- card 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/comfort.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Comfort</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+                incidunt ab unde placeat at ipsum porro, magnam aliquam
+                accusamus voluptates molestias architecto sapiente sed eligendi
+                aspernatur itaque pariatur sunt delectus!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/performance.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati a maxime ipsum est architecto in optio commodi,
+                officia aspernatur dolorem, deserunt quo quisquam, ipsam
+                excepturi voluptatum esse! Officia, delectus deleniti!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/outdoor.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto dolorem eaque magni rem? Aperiam at dolorum id
+                aliquam enim omnis corrupti cumque eaque laborum nulla! Dolorem
+                dolor magni eius impedit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Footer - Copyright -->
+     <!-- Footer Nav -->
     
+     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top bg-black ps-4">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          
+          <div class="d-flex rounded-circle border border-1 justify-content-center align-items-center p-2 bg-dark footer-logo-container" >
+            <img class="img-fluid" src="img/logo.png" alt="">
 
+          </div>
+
+        </a>
+        <p class="text-white-50 small text-nowrap">&copy; 2024</p>
+      </div>
+  
+      <div class="col mb-3">
+  
+      </div>
+  
+      <div class="col mb-3">
+        <h5 class="fw-light text-white">Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50 fw-lighter">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50 fw-lighter">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50 fw-lighter">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50 fw-lighter">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50 fw-lighter">About</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <h5 class="fw-light text-white">Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50 fw-lighter">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50 fw-lighter">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50 fw-lighter">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50 fw-lighter">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50 fw-lighter">About</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <h5 class="fw-light text-white">Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50 fw-lighter">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50 fw-lighter">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50 fw-lighter">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50 fw-lighter">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50 fw-lighter">About</a></li>
+        </ul>
+      </div>
+    </footer>
+
+<!--   i was trying to buid mine   <footer class="bd-footer py-4 py-md-5 mt-5 bg-dark ">
+      <div class="container py-4 py-md-5 px-4 px-md-3 text-white-50 fw-lighter ">
+        <div class="row text-white ">
+          
+              <div class="col-lg-3 mb-3">
+                <img src="img/logo-small.png" alt="">
+                <ul class="list-unstyled small">
+                  <li class="mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur facilis cum soluta deleniti voluptates nisi quis ipsum eaque esse itaque ea consequatur rem, ab deserunt aperiam, dignissimos nobis. Repudiandae, optio.</li>
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                      <path fill="#FFFFFF" d="M22.676 0H1.324C0.593 0 0 0.593 0 1.324v21.352C0 23.407 0.593 24 1.324 24h11.488v-9.294H9.847v-3.622h2.965V8.413c0-2.937 1.793-4.544 4.413-4.544 1.254 0 2.333 0.093 2.647 0.135v3.07h-1.816c-1.427 0-1.703 0.678-1.703 1.673v2.191h3.407l-0.444 3.622h-2.963V24h5.806C23.407 24 24 23.407 24 22.676V1.324C24 0.593 23.407 0 22.676 0z"/>
+                    </svg>
+                    
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                      <path fill="#FFFFFF" d="M23.498 6.186a2.994 2.994 0 0 0-2.108-2.116C19.805 3.518 12 3.518 12 3.518s-7.805 0-9.39.552A2.994 2.994 0 0 0 .502 6.186C0 7.775 0 12 0 12s0 4.225.502 5.814a2.994 2.994 0 0 0 2.108 2.116c1.585.552 9.39.552 9.39.552s7.805 0 9.39-.552a2.994 2.994 0 0 0 2.108-2.116C24 16.225 24 12 24 12s0-4.225-.502-5.814z"/>
+                      <polygon fill="#000000" points="9.75,15.568 9.75,8.432 16.5,12"/>
+                    </svg>
+                    
+                  </div>
+                </ul>
+              </div>
+            
+              <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                
+                <ul class="list-unstyled">
+                  <li class="mb-2"><a href="/">Lorem ipsum</a></li>
+                  <li class="mb-2"><a href="/docs/5.3/">Lorem ipsum</a></li>
+                  <li class="mb-2"><a href="/docs/5.3/examples/">Lorem ipsum</a></li>
+                  <li class="mb-2"><a href="https://icons.getbootstrap.com/">Lorem ipsum</a></li>
+                  <li class="mb-2"><a href="https://themes.getbootstrap.com/">Lorem ipsum</a></li>
+                  <li class="mb-2"><a href="https://blog.getbootstrap.com/">Lorem ipsum</a></li>
+                  <li class="mb-2"><a href="https://cottonbureau.com/people/bootstrap" target="_blank" rel="noopener">Lorem ipsum</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-lg-2 mb-3">
+                
+                <ul class="list-unstyled">
+                  <li class="mb-2"><a href="/docs/5.3/getting-started/">General Information</a></li>
+                  <li class="mb-2"><a href="/docs/5.3/examples/starter-template/">About Us</a></li>
+                  <li class="mb-2"><a href="/docs/5.3/getting-started/webpack/">Statistic data</a></li>
+                  <li class="mb-2"><a href="/docs/5.3/getting-started/parcel/">Jobs</a></li>
+                  <li class="mb-2"><a href="/docs/5.3/getting-started/vite/">Press Release</a></li>
+                  <li class="mb-2"><a href="/docs/5.3/getting-started/vite/">Contact</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-lg-2 mb-3 ">
+                <h5>CONTACT</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="location" width="16" height="16" fill="white">
+                    <path d="M12,2a8.009,8.009,0,0,0-8,8c0,3.255,2.363,5.958,4.866,8.819,0.792,0.906,1.612,1.843,2.342,2.791a1,1,0,0,0,1.584,0c0.73-.948,1.55-1.885,2.342-2.791C17.637,15.958,20,13.255,20,10A8.009,8.009,0,0,0,12,2Zm0,11a3,3,0,1,1,3-3A3,3,0,0,1,12,13Z"></path>
+                  </svg>
+                  Padington,57 Street, Singapore</li>
+                  <li class="mb-2">+ 01 234 567 89</li>
+                  <li class="mb-2">contact@airstream.co</li>
+                  
+                </ul>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </footer>
+ -->    <!-- copyright -->
+    
+    <!-- copyright -->
+    <footer class="text-center fw-lighter text-lg-start bg-black">
+       <div class="text-center p-3">
+        <a class="text-white text-decoration-none" href="#"> © 2023 Copyright: Airstream ™; - All rights reserved</a>
+       </div>
+
+    <!-- script -->
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
     ></script>
-
   </body>
 </html>
